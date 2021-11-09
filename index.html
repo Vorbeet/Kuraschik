@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Dungeon</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slider.css">
   </head>
   <body>
     <div class="page-header">
@@ -17,8 +18,23 @@
           </ul>
           <a class="btn btn-quick-order" href="povezlo.html">Заказать</a>
         </div>
-        <div class="promo">
-          <a href="#">Лучшние футболки<br> Лучше не найти</a>
+        <div class="slider middle">
+	 <div class="slides"></div>
+	  <input type="radio" name="r" id="r1" checked>
+	  <input type="radio" name="r" id="r2">
+	  <input type="radio" name="r" id="r3">
+	  <input type="radio" name="r" id="r4">
+	  
+	  <div class="slide s1"><img src="sliderline/1.jpg" alt=""></div>
+	  <div class="slide"><img src="sliderline/2.jpg" alt=""></div>
+	  <div class="slide"><img src="sliderline/3.jpg" alt=""></div>
+	  <div class="slide"><img src="sliderline/4.jpg" alt=""></div>
+	 </div>
+         <div class="navigation1">
+	  <label for="r1" class="bar"></label>
+	  <label for="r2" class="bar"></label>
+	  <label for="r3" class="bar"></label>
+	  <label for="r4" class="bar"></label>
         </div>
       </div>
     </div>
@@ -42,8 +58,10 @@
 
     <div class="cat-reference">
       <div class="container">
+	<div id="link2">
         <h2 class="section-title">Что же такое Gachimuchi?</h2>
-	<h3 class="section-tittle">Есть 2 основые личности, которые я бы хотел выделить</h2>
+	</div>
+	<h3 class="section-tittle">Есть 2 основые личности, которые я бы хотел выделить, именно через них вы будете делать свой заказ</h2>
         <a class="btn to-full-reference" href="https://ru.wikipedia.org/wiki/Гачимучи" title="Войти в мир знаний">википедия</a>
         <dl>
           <div class="theory-container">
@@ -72,12 +90,11 @@
     <div class="reviews">
       <div class="container">
 	<div id="link1">
-        <h2 class="section-title">Отзывы о нас</h2>
+        <h2 class="section-title">Советы</h2>
 	</div>
-        <div class="reviews-list clearfix">
-	    <center>		
-             <img src="img/loading.gif" width="800" height="500">
-	    </center>		 
+        <div class="reviews-list clearfix"> 		
+             <p>Да, выбор у нас небольшой, но и думать много не надо, лично от себя я могу посоветовать заказывать размеры футболок побольше, но, опять же, дело вкуса.</p>
+	     <p>В первую очередь, если вы не можете решить или вы запутались в футболках, вы должны, нет, вы обязаны позвонить нашему главному консультанту, зачем ему еще телефон, если вы ему не звоните?</p>		 
         </div>
       </div>
     </div>
@@ -93,22 +110,22 @@
             <img src="img/1fut.jpg" alt="ГОРНЫЙ" width="306" height="206">
             <h3>Футболка "Качалка"</h3>
             <b class="catalog-item-price">2 р.</b>
-            <a class="btn btn-info" >Описание</a>
-            <a class="btn btn-buy" >Купить</a>
+            <a class="btn btn-info" <a href="#link2">Описание</a>
+            <a class="btn btn-buy" <a href="#link2">Купить</a>
           </div>
           <div class="catalog-item">
             <img src="img/2fut.jpg" alt="Гей" width="306" height="206">
             <h3>Футболка «Мам, я не гей»</h3>
             <b class="catalog-item-price">666 р.</b>
-            <a class="btn btn-info" >Описание</a>
-            <a class="btn btn-buy" >Купить</a>
+            <a class="btn btn-info" <a href="#link2">Описание</a>
+            <a class="btn btn-buy" <a href="#link2">Купить</a>
           </div>
           <div class="catalog-item">
             <img src="img/3fut.jpg" alt="Не гей" width="306" height="206">
             <h3>Футболка "Пап, я гей</h3>
             <b class="catalog-item-price">777 р.</b>
-            <a class="btn btn-info" >Описание</a>
-            <a class="btn btn-buy" >Купить</a>
+            <a class="btn btn-info" <a href="#link2">Описание</a>
+            <a class="btn btn-buy" <a href="#link2">Купить</a>
           </div>
         </div>
 	
@@ -122,7 +139,7 @@
 
     <div class="feedback">
       <div class="container">
-        <h2 class="section-title">Есть проблемы?</h2>
+        <h2 class="section-title">Хочешь подписаться на рассылку?</h2>
         <p class="feedback-tip">Ты уверен(а)?</p>
         <form class="feedback-form" action="#" method="post">
           <div class="feedback-form-group">
@@ -143,20 +160,7 @@
               Я согласен получать спам и смс на телефон
             </label>
           </div>
-          <div class="feedback-form-group">
-            <label for="topic">Тема обращения:</label>
-            <select name="topic" id="topic">
-              <option value="1">НЕ</option>
-              <option value="2">МОЖЕТ</option>
-              <option value="3">БЫТЬ</option>
-	      <option value="3">ПРОБЛЕМ</option>
-            </select>
-          </div>
-          <div class="feedback-form-group">
-            <label for="message">Текст обращения:</label>
-            <textarea name="message" id="message"></textarea>
-          </div>
-           <button class="btn" onclick="this.style.display='none'">Нажми на меня</button>
+           <a class="btn">Нажми на меня</a>
 
         </form>
       </div>
@@ -182,9 +186,10 @@
             </ul>
           </div>
           <div class="footer-menu">
-            <h3>Посмотреть на Билли</h3>
+            <h3>Помощь</h3>
             <ul>
-              <li><a href="img/billy.jpg" download="">Посмотреть</a></li>
+              <li><a href="img/billy.jpg" download="">Лучше не нажимать</a></li>
+	      <li><a href="img/ot.html">Отзывы заключили?</a></li>
             </ul>
           </div>
         </div>
