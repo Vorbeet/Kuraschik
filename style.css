@@ -21,8 +21,8 @@ body {
 }
 
 .page-header {
-  min-height: 490px;
-  padding-top: 35px;
+  min-height: 430px;
+  padding-top: 10px;
   background-image: url("img/header-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -41,13 +41,14 @@ body {
 
 .header-logo {
   float: left;
-  width: 205px;
-  height: 55px;
+  width: 200px;
+  height: 150px;
 }
 
 .header-logo img {
-  width: 205px;
-  height: 55px;
+  width: 70px;
+  height: 70px;
+  margin-left: 50px;
 }
 
 .main-nav {
@@ -110,7 +111,6 @@ body {
 
 .btn-quick-order {
   float: right;
-  margin-top: 6px;
   color: #ffffff;
   border-color: #ffffff;
 }
@@ -709,4 +709,10 @@ body {
 
 .footer-copyright a:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.foto {
+  display: flex:
+  margin-top: 50px;
+  margin-right: 800px;
 }
